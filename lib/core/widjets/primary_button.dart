@@ -16,7 +16,7 @@ class PrimaryButton extends StatelessWidget {
     this.buttonColor,
     this.width,
     this.hight,
-    this.boarder, this.icon,
+    this.boarder, this.icon, this.trailing,
   });
 
   final String? buttonText;
@@ -28,6 +28,7 @@ class PrimaryButton extends StatelessWidget {
   final Color? textColor;
   final void Function()? onPressed;
   final Widget? icon ;
+  final Widget? trailing;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -49,11 +50,13 @@ class PrimaryButton extends StatelessWidget {
             buttonText ?? '',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-
               fontSize: fontSize,
               color: textColor ?? AppColor.scafoldColor,
             ),
           ),
+          trailing !=null ? WidthSpace(10) : SizedBox.shrink(),
+          trailing !=null ? trailing! : SizedBox.shrink(),
+
         ],
       ),
     );

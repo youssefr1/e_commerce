@@ -74,7 +74,8 @@ class HomeScreen extends StatelessWidget {
                   SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 16.sp,
-                    childAspectRatio: 0.7
+                    childAspectRatio: 0.76,
+                    mainAxisSpacing: 8.sp
                   ),
               children: [
                 ProductItem(title: 'title', price: '120\$',ontap: (){

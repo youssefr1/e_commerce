@@ -11,7 +11,6 @@ import '../../../../core/widjets/custom_text_field.dart';
 import '../../../../core/widjets/primary_button.dart';
 import '../../../../core/widjets/spacing.dart';
 import '../widgets/custom_or_login_widget.dart';
-import '../widgets/social_login_buttons.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

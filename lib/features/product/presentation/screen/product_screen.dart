@@ -1,9 +1,11 @@
+import 'package:e_commerce/core/routing/app_routing.dart';
 import 'package:e_commerce/core/styling/app_styles.dart';
 import 'package:e_commerce/core/widjets/primary_button.dart';
 import 'package:e_commerce/core/widjets/spacing.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../core/widjets/back_button_widget.dart';
 
@@ -118,7 +120,9 @@ class ProductScreen extends StatelessWidget {
                           icon: Icon(Icons.shopping_cart,color: Colors.white,size: 18,),
                     width:  MediaQuery.of(context).size.width *0.65,
                           buttonText: 'Add to cart',
-                          onPressed: () {},
+                          onPressed: () {
+                            context.pushNamed(Approutes.cartScreen);
+                          },
 
                         ),
                         

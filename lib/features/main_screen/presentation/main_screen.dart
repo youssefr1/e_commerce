@@ -1,4 +1,6 @@
 
+import 'package:e_commerce/features/account/presentation/screens/account_screen.dart';
+import 'package:e_commerce/features/cart/presentation/screen/cart_screen.dart';
 import 'package:e_commerce/features/product/presentation/screen/product_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,8 +20,8 @@ class _MainScreenState extends State<MainScreen> {
 
   List<Widget> screens = [
     HomeScreen(),
-    ProductScreen(),
-    Container(color: Colors.black,),
+    CartScreen(),
+    AccountScreen()
 
   ];
 

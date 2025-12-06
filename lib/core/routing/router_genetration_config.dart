@@ -1,4 +1,7 @@
+import 'package:e_commerce/features/account/presentation/screens/account_screen.dart';
+import 'package:e_commerce/features/address/presentation/screen/address_screen.dart';
 import 'package:e_commerce/features/auth/presentation/screens/login_screen.dart';
+import 'package:e_commerce/features/cart/presentation/screen/cart_screen.dart';
 import 'package:e_commerce/features/main_screen/presentation/main_screen.dart';
 import 'package:e_commerce/features/product/presentation/screen/product_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -30,6 +33,18 @@ class RouteGenerationConfig{
           path:Approutes.productScreen ,
           name:Approutes.productScreen  ,
           builder: (context, state) => ProductScreen(),
+        ),GoRoute(
+          path:Approutes.cartScreen ,
+          name:Approutes.cartScreen  ,
+          builder: (context, state) => CartScreen(),
+        ),GoRoute(
+          path:Approutes.accountScreen ,
+          name:Approutes.accountScreen  ,
+          builder: (context, state) => AccountScreen(),
+        ),GoRoute(
+          path:Approutes.addressScreen ,
+          name:Approutes.addressScreen  ,
+          builder: (context, state) => AddressScreen(),
         ),
 
 
